@@ -24,8 +24,8 @@ def Load_excel_info(xlsx_route: str):
             else:
                 # gurado la data en su respectiva parte del diccionario
                 data['ID'] = row[0]
-                data['Nombres'] = row[2]
-                data['Apellidos'] = row[3]
+                data['Apellidos'] = row[2]
+                data['Nombres'] = row[3]
             # agrego el nuevo diccionario a la lista
             # print(data)
             list_of_data.append(data)

@@ -6,8 +6,11 @@ from qrcode.image.styledpil import StyledPilImage
 def make_the_qr(id: str):
 
     qr = qrcode.QRCode(
+        version=None,
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
         image_factory=qrcode.image.svg.SvgPathImage,
-        box_size=8
+        border=0,
+        box_size=23
     )
 
     # agrego data al qr
