@@ -14,7 +14,7 @@ def rite_in_the_svg(qr_string: str, nombre_asistente: str):
     # cambio el titulo
     new_title = content.replace("este_es_el_titulo", __replace__(nombre_asistente))
     # si el nombre del asistente es muy largo achico el font-size
-    
+
     if len(nombre_asistente) <= 17:
         new_font_size = new_title
     if 17 < len(nombre_asistente) <= 22:
@@ -24,7 +24,7 @@ def rite_in_the_svg(qr_string: str, nombre_asistente: str):
 
     # cambio el qr
     new_qr = new_font_size.replace(old_qr, qr_string)
-    
+
 
     # creo un nuevo documento
     new_file = open(f"qrs/{nombre_asistente}.svg", "w")

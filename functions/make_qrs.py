@@ -14,7 +14,7 @@ def make_the_qr(id: str):
     )
 
     # agrego data al qr
-    qr.add_data(f'ejemplo')
+    qr.add_data(id)
 
     qr.make(fit=True)
 
